@@ -5,17 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --progress --display-modules --colors  --display-reasons --mode development"
+    "build": "webpack --progress --display-modules --colors  --display-reasons --mode development"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "last 5 version",
+    "> 1%",
+    "IE 10"
+  ],
   "devDependencies": {
+    "autoprefixer": "^9.1.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^2.1.6",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
